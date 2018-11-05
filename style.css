@@ -32,7 +32,7 @@ li a{
 li span {
 	display: block;
 	text-align: center;
-	padding: 35px 70px;
+	padding: 35px 80px;
 	width: 50%;
 	height: 100%;
 }
@@ -133,8 +133,8 @@ footer{
 .display-left{
 	position: absolute;
 	width: 50px;
-	height: 370px;
-	top: 170px;
+	height: 60px;
+	top: 325px;
 	left: 495px;
 	background-color: rgba(0, 0, 0, 0.4);
 	border: 0px;
@@ -143,8 +143,8 @@ footer{
 .display-right{
 	position: absolute;
 	width: 50px;
-	height: 370px;
-	top: 170px;
+	height: 60px;
+	top: 325px;
 	right: 495px;
 	background-color: rgba(0, 0, 0, 0.4);
 	border: 0px;
