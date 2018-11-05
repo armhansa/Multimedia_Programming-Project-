@@ -42,7 +42,10 @@ li a:hover {
 	background-color: #1c210d; 
 }
 
-footer {
+footer{
+	height: 230px;
+}
+#address{
 	padding-top: 20px;
 	background: #1c210d;
 	height: 100px;
