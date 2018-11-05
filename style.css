@@ -157,3 +157,20 @@ footer{
 	margin: 0 0 5px;
 	border: 1px solid rgba(51, 51, 51, 1);
 }
+/* Caption text */
+.pro-1, .pro-2{
+  color: #FF55FF;
+  font-size: 30px;
+  padding: 8px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.pro-1 {
+  bottom: 100px;
+  left: 0px;
+}
+.pro-2{
+  top: 1000px;
+  left: 0px;
+}

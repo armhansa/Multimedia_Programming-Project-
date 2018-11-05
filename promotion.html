@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css?family=Mr+De+Haviland" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
   <div id="container" align="center">
@@ -19,7 +20,77 @@
       </ul>
     </header>
 
-    <div class="contant"></div>
+    <div style="height: 1200px; background: #1a0e04; padding-top: 35px">
+
+      <img src="src/promotion_1.webp" width="538" height="440">
+      <div class="pro-1">Promotion! ซื้อวันนี้แถมฟรี...</div>
+
+      <div class="w3-content" style="max-width:538px; margin-top: 30px">
+        <div class="mySlides">
+          <img src="src/promotion_2.webp" width="538" height="440">
+          <div class="pro-2">Promotion 1</div>
+        </div>
+        <div class="mySlides">
+          <img src="src/promotion_3.webp" width="538" height="440">
+          <div class="pro-2">Promotion 2</div>
+        </div>
+        <div class="mySlides">
+          <img src="src/promotion_4.webp" width="538" height="440">
+          <div class="pro-2">Promotion 3</div>
+        </div>
+        <div class="mySlides">
+          <img src="src/promotion_5.webp" width="538" height="440">
+          <div class="pro-2">Promotion 4</div>
+        </div>
+
+        <div class=" w3-section">
+          <div class="w3-col s3">
+            <img class="demo w3-opacity" src="src/promotion_2.webp" width="134.5" height="134.5" onclick="currentDiv(1)">
+          </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity" src="src/promotion_3.webp" width="134.5" height="134.5" onclick="currentDiv(2)">
+          </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity" src="src/promotion_4.webp" width="134.5" height="134.5" onclick="currentDiv(3)">
+          </div>
+          <div class="w3-col s3">
+            <img class="demo w3-opacity" src="src/promotion_5.webp" width="134.5" height="134.5" onclick="currentDiv(4)">
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+          }
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " w3-opacity-off";
+        }
+
+        currentDiv(1);
+      </script>
+
+
+
+    </div>
+
+
+
+
+
 
     <footer>
       <div id="address" align="center">
