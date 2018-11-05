@@ -33,23 +33,19 @@ li span {
 	display: block;
 	text-align: center;
 	padding: 35px 70px;
-	width: 20%;
+	width: 50%;
 	height: 100%;
 }
 
  /*Change the link color to #111 (black) on hover */
 li a:hover {
-	background-color: #303030;
-	color: #B2B1B1; 
+	background-color: #1c210d; 
 }
 
 footer {
-}
-#adress {
-	padding-top: 30px;
-	/*background: #1c210d;*/
-	background: #FFFFFF IMPORTANT!;
-	height: 200px;
+	padding-top: 20px;
+	background: #1c210d;
+	height: 100px;
 }
 .menu_button{
 	margin-block-start: 1em;
@@ -62,7 +58,6 @@ footer {
 	width: 100%;
 }
 #logo{
-	background: #1c210d;
 	font: normal normal normal 46px/1.4em 'Mr De Haviland',cursive;
 	width: 300px;
 	height: 135px;
@@ -77,8 +72,9 @@ footer {
 	width: 60%;
 	padding: 5px;
 }
-#home-img {
+#home_img {
 	width: 100%;
+	height: 614px;
 	/*padding: 0px auto;*/
 	align-content: center;
 }
@@ -86,15 +82,14 @@ footer {
 	margin: 0px 0px 0px 0px;
 }
 #socials{
-	margin-top: 40px;
+	margin-top: 20px;
 }
 #social{
-	margin-left: 2px;
-	margin-right: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 .active a{
-	background-color: #303030;
-	color: #B2B1B1;
+	background-color: #1c210d; 
 	pointer-events: none;
    	cursor: default;
 }
