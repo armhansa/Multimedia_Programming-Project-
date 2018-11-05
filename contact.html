@@ -19,7 +19,26 @@
       </ul>
     </header>
 
-    <div class="contant"></div>
+    <div style="height: 799px; background: #1a0e04; padding-top: 30px">
+      <div style="height: 100%;width: 538px;">
+        <img class="mySlides" src="src/contact_1.webp" width="538" height="381">
+        <img class="mySlides" src="src/contact_2.webp" width="538" height="381">
+        <img class="mySlides" src="src/contact_3.webp" width="538" height="381">
+        <img class="mySlides" src="src/contact_4.webp" width="538" height="381">
+
+        <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+        <div style="margin-top: 80px;"></div>
+          <input class="u-input" type="text" name="name" placeholder="Name *" style="height: 29px;"><br>
+          <input class="u-input" type="text" name="email" placeholder="Email *" style="height: 29px;"><br>
+          <input class="u-input" type="text" name="subject" placeholder="Subject *" style="height: 29px;"><br>
+          <textarea class="u-input" name="message" placeholder="Message *" cols="40" rows="6"></textarea><br>
+          <input class="u-submit" type="submit" name="send" value="Send" style="right: 0px;">
+        </div>
+
+      </div>
+    </div>
 
     <footer>
       <div id="address" align="center">
@@ -33,8 +52,28 @@
         <a href="https://www.instagram.com/"><img id="social" src="src/ig.png"/></a>
       </div>
     </footer>
-    
+
   </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+        }
+        x[slideIndex-1].style.display = "block"; 
+    }
+  </script>
 
 </body>
 </html>
