@@ -193,3 +193,6 @@ footer{
 	0%   {color:#1c210d;}
 	100%  {color:white;}
 }
+p {
+	margin: 0px;
+}
