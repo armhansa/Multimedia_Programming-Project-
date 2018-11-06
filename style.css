@@ -43,11 +43,11 @@ li a:hover {
 }
 
 footer{
-	height: 230px;
+	height: 200px;
 }
 #address{
-	padding-top: 20px;
-	background: #1c210d;
+	padding-top: 40px;
+	background: #1e1e1e;
 	height: 100px;
 }
 .menu_button{
@@ -84,9 +84,6 @@ footer{
 #img {
 	margin: 0px 0px 0px 0px;
 }
-#socials{
-	margin-top: 20px;
-}
 #social{
 	margin-left: 5px;
 	margin-right: 5px;
@@ -107,10 +104,10 @@ footer{
 .bg_page{
 	background-color: #1a0e04;
 	width: 100%;
-	height: 1000px;
 	/*padding: 0px auto;*/
 	align-content: center;
 	margin: 0px 0px 0px 0px;
+	padding-bottom: 80px;
 }
 .column {
 	margin-left: 100px;
@@ -152,7 +149,7 @@ footer{
 }
 .u-input{
 	background-color: rgba(101, 101, 101, 0.68);
-	width: 100%;
+	width: 538px;
 	color: #EAEAEA;
 	margin: 0 0 5px;
 	border: 1px solid rgba(51, 51, 51, 1);
@@ -167,12 +164,32 @@ footer{
   text-align: center;
 
 }
-.pro-1 {
-  bottom: 720px;
-  left: 0px;
-}
-.pro-2{
-  top: 1000px;
-  left: 0px;
+.pro-1{
+	color: #1c210d;
+  	bottom: 720px;
+  	left: 0px;
+	animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 
+ }
+.pro-2{
+	color: #1c210d;
+	top: 1000px;
+	left: 0px;
+	font-size: 18pt;
+	animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+.pro-1:hover, .pro-2:hover{
+	color: white;
+}
+
+@keyframes example {
+	0%   {color:#1c210d;}
+	100%  {color:white;}
 }
