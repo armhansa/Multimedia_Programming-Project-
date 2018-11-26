@@ -165,7 +165,7 @@ footer{
 .pro-1, .pro-2{
   color: #FF55FF;
   font-size: 30px;
-  padding: 8px;
+  padding: 10px;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -173,8 +173,7 @@ footer{
 }
 .pro-1{
 	color: #1c210d;
-  	bottom: 430px;
-  	left: 0px;
+	left: 0px;
 	animation-name: example;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -183,8 +182,8 @@ footer{
  }
 .pro-2{
 	color: #1c210d;
-	top: 1000px;
 	left: 0px;
+	top: 1000px;
 	font-size: 18pt;
 	animation-name: example;
     animation-duration: 3s;
@@ -194,6 +193,22 @@ footer{
 }
 .pro-1:hover, .pro-2:hover{
 	color: white;
+}
+.menu-desc{
+	padding-left: 30px;
+	padding-right: 30px; 
+}
+.unlike{
+	background-image:url("src/unlike.png");
+	background-size: 25px 25px;
+	width: 25px;
+	height: 25px;
+	border: 0;
+}
+.unlike:hover {
+	background-image:url("src/like.png");
+	background-size: 25px 25px;
+
 }
 
 @keyframes example {
