@@ -9,15 +9,24 @@
 <body>
   <div id="container" align="center">
     <header id="menu">
-      <ul>
+      <div id="ham" onclick="hamtog()">
+        MENU
+      </div>
+      <ul class="themenulist">
         <li><div id="logo"><span>Artisan</span></div></li>
         <li><div class="button"><a href="index.html">HOME</a></div></li>
         <li><div class="button"><a href="promotion.html">PROMOTION</a></div></li>
-        <li><div class="button"><a href="menu.html">MENU</a></div></li>
+        <li><div class="button"><a href="menu.php">MENU</a></div></li>
         <li><div class="button"><a href="team.html">TEAM</a></div></li>
-        <li><div class="active button"><a href="contact.html">CONTACT</a></div></li>
+        <li><div class="active button"><a href="contact.php">CONTACT</a></div></li>
       </ul>
     </header>
+    <script type="text/javascript">
+      function hamtog(){
+        document.querySelector('.themenulist').classList.toggle('tog');
+
+      }
+    </script>
 
     <div style="height: 799px; background: #1a0e04; padding-top: 30px">
       <div style="height: 100%;width: 538px;">
@@ -29,13 +38,15 @@
         <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="display-right" onclick="plusDivs(+1)">&#10095;</button>
 
-        <div style="margin-top: 80px;"></div>
-          <input class="u-input" type="text" name="name" placeholder="Name *" style="height: 29px;"><br>
-          <input class="u-input" type="text" name="email" placeholder="Email *" style="height: 29px;"><br>
-          <input class="u-input" type="text" name="subject" placeholder="Subject *" style="height: 29px;"><br>
-          <textarea class="u-input" name="message" placeholder="Message *" cols="60" rows="6"></textarea><br>
-          <button class="u-submit" type="submit" name="send" value="Send">Send</button>
-        </div>
+        <form action="send_message.php"method="POST">
+          <div style="margin-top: 80px;"></div>
+            <input class="u-input" type="text" name="fname" placeholder="Name *" style="height: 29px;"><br>
+            <input class="u-input" type="text" name="email" placeholder="Email *" style="height: 29px;"><br>
+            <input class="u-input" type="text" name="subject" placeholder="Subject *" style="height: 29px;"><br>
+            <textarea class="u-input" name="message" placeholder="Message *" cols="60" rows="6"></textarea><br>
+            <button class="u-submit" type="submit" name="send" value="Send">Send</button>
+          </div>
+        </form>
 
       </div>
 
@@ -72,7 +83,11 @@
         }
         x[slideIndex-1].style.display = "block"; 
     }
+
   </script>
+  <?php if(isset($_GET) && $_GET['alert'] == 'true') { ?>
+  <script>alert("Message Sent");</script>
+  <?php } ?>
 
 </body>
 </html>

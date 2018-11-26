@@ -198,23 +198,132 @@ footer{
 	padding-left: 30px;
 	padding-right: 30px; 
 }
-.unlike{
-	background-image:url("src/unlike.png");
-	background-size: 25px 25px;
-	width: 25px;
-	height: 25px;
+.heart{
+
+	background-position:left center;
+	background-repeat: no-repeat;
 	border: 0;
+	cursor: pointer;
+	transition: all .15s;
+	position: relative;
+}
+.unlike{
+		background-size: 16px;
+	background-image:url("src/unlike.png");
 }
 .unlike:hover {
 	background-image:url("src/like.png");
-	background-size: 25px 25px;
-
 }
-
+.like{
+		background-size: 22px;
+	background-image:url("src/like.png");
+}
+.like:hover {
+	/*background-image:url("src/unlike.png");*/
+}
+.heart span {
+	padding-left: 30px;
+	display: inline-block;
+}
 @keyframes example {
 	0%   {color:#1c210d;}
 	100%  {color:white;}
 }
 p {
 	margin: 0px;
+}
+
+.menu-desc span{
+	line-height: 2rem;
+
+}
+
+.menu-name{
+	padding: 0 .5rem;
+}
+
+.mm{
+	float: left;
+	width: 33%;
+}
+
+.green_main{
+	background: #1a0e04; 
+	/*padding: 40px*/
+}
+
+#ham{
+	display: none;
+}
+
+#img{
+	width: 100%;
+}
+#home_img{
+	padding-top: 0%;
+	background-position: center;
+	background-size: cover;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+    .column.detail {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.column{
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	padding: 1rem;
+}
+    #container {
+    width: 100%;
+    margin: auto;
+}
+.green_main{
+	padding: 1rem;
+}
+.mm{
+	width: 100%;
+}
+li{
+	margin: 0;
+	width: 100%
+}
+li span{
+	padding: 1rem;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+#logo{
+	width: 100%;
+	height: auto;
+}
+li a{
+	margin: 0;
+}
+.button {
+    height: 0rem;
+    transition: all .3s;
+}
+.themenulist.tog .button {
+    height: 3rem;
+}
+#ham{
+	display: block;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+}
+#home_img{
+	width: 100%;
+	height: auto;
+	padding-top: 100%;
+}
 }

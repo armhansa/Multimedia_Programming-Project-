@@ -9,17 +9,26 @@
 <body>
   <div id="container" align="center">
     <header id="menu">
-      <ul>
+      <div id="ham" onclick="hamtog()">
+        MENU
+      </div>
+      <ul class="themenulist">
         <li><div id="logo"><span>Artisan</span></div></li>
         <li><div class="active button"><a href="index.html">HOME</a></div></li>
         <li><div class="button"><a href="promotion.html">PROMOTION</a></div></li>
-        <li><div class="button"><a href="menu.html">MENU</a></div></li>
+        <li><div class="button"><a href="menu.php">MENU</a></div></li>
         <li><div class="button"><a href="team.html">TEAM</a></div></li>
-        <li><div class="button"><a href="contact.html">CONTACT</a></div></li>
+        <li><div class="button"><a href="contact.php">CONTACT</a></div></li>
       </ul>
     </header>
+    <script type="text/javascript">
+      function hamtog(){
+        document.querySelector('.themenulist').classList.toggle('tog');
 
-    <div id="home_img" align="center"><img id="img" src="src/home.png" width="982" height="614"></div>
+      }
+    </script>
+
+    <div id="home_img" align="center" style="background-image: url('src/home.png')"></div>
     
     <footer>
       <div id="address" align="center">
