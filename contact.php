@@ -24,22 +24,25 @@
     <script type="text/javascript">
       function hamtog(){
         document.querySelector('.themenulist').classList.toggle('tog');
+        document.querySelector('.display-left').classList.toggle('slided');
+        document.querySelector('.display-right').classList.toggle('slided');
 
       }
     </script>
 
     <div style="height: 799px; background: #1a0e04; padding-top: 30px">
-      <div style="height: 100%;width: 538px;">
-        <img class="mySlides" src="src/contact_1.webp" width="538" height="381">
-        <img class="mySlides" src="src/contact_2.webp" width="538" height="381">
-        <img class="mySlides" src="src/contact_3.webp" width="538" height="381">
-        <img class="mySlides" src="src/contact_4.webp" width="538" height="381">
+      <div class="contact-img">
+        <div>
+          <img class="mySlides" src="src/contact_1.webp" width="538" height="381">
+          <img class="mySlides" src="src/contact_2.webp" width="538" height="381">
+          <img class="mySlides" src="src/contact_3.webp" width="538" height="381">
+          <img class="mySlides" src="src/contact_4.webp" width="538" height="381">
+          <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="display-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
 
-        <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="display-right" onclick="plusDivs(+1)">&#10095;</button>
-
-        <form action="send_message.php"method="POST">
-          <div style="margin-top: 80px;"></div>
+        <form action="send_message.php"method="POST" style="padding: 1em;">
+          <div style="margin-top: 80px; padding: 1em;"></div>
             <input class="u-input" type="text" name="fname" placeholder="Name *" style="height: 29px;"><br>
             <input class="u-input" type="text" name="email" placeholder="Email *" style="height: 29px;"><br>
             <input class="u-input" type="text" name="subject" placeholder="Subject *" style="height: 29px;"><br>
@@ -49,7 +52,6 @@
         </form>
 
       </div>
-
 
    <footer>
       <div id="address" align="center">

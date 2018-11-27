@@ -131,8 +131,8 @@ footer{
 	position: absolute;
 	width: 50px;
 	height: 60px;
-	top: 325px;
-	left: 495px;
+	top: 45%;
+	left: 25%;
 	background-color: rgba(0, 0, 0, 0.4);
 	border: 0px;
 	color: rgba(255,255,255,0.9);
@@ -141,8 +141,8 @@ footer{
 	position: absolute;
 	width: 50px;
 	height: 60px;
-	top: 325px;
-	right: 495px;
+	top: 45%;
+	right: 25%;
 	background-color: rgba(0, 0, 0, 0.4);
 	border: 0px;
 	color: rgba(255,255,255,0.9);
@@ -172,23 +172,18 @@ footer{
 
 }
 .pro-1{
-	color: #1c210d;
-	left: 0px;
-	animation-name: example;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+	color: #ffffff;
+    left: 0px;
+    top: 25%;
+    text-shadow: 2px 2px #1a0e04;
 
  }
 .pro-2{
-	color: #1c210d;
-	left: 0px;
-	top: 1000px;
+	color: #ffffff;
+    left: 0px;
+    top:	90%;
+    text-shadow: 2px 2px #1a0e04;
 	font-size: 18pt;
-	animation-name: example;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
     
 }
 .pro-1:hover, .pro-2:hover{
@@ -264,66 +259,129 @@ p {
 	background-position: center;
 	background-size: cover;
 }
+
+.mySlides {
+	width: 100%;
+}
+
+.demo {
+	width: 100%;
+}
+.choce-1 {
+}
+.choce-2 {
+}
+.choce-3 {
+}
+.choce-4 {
+}
+.contact-img{
+	 height: 100%;
+	 width: 538px;
+}
+.pro-bg{
+	width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
     body {
         margin: 0;
     }
     .column.detail {
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.column{
-	width: 100%;
-	margin: 0;
-	text-align: center;
-	padding: 1rem;
-}
-    #container {
-    width: 100%;
-    margin: auto;
-}
-.green_main{
-	padding: 1rem;
-}
-.mm{
-	width: 100%;
-}
-li{
-	margin: 0;
-	width: 100%
-}
-li span{
-	padding: 1rem;
-	text-align: center;
-	display: block;
-	width: 100%;
-}
-#logo{
-	width: 100%;
-	height: auto;
-}
-li a{
-	margin: 0;
-}
-.button {
-    height: 0rem;
-    transition: all .3s;
-}
-.themenulist.tog .button {
-    height: 3rem;
-}
-#ham{
-	display: block;
-	position: absolute;
-	right: 1rem;
-	top: 2rem;
-}
-#home_img{
-	width: 100%;
-	height: auto;
-	padding-top: 100%;
-}
+	    text-align: center;
+	    width: 100%;
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	}
+	.column{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		padding: 1rem;
+	}
+	#container {
+	    width: 100%;
+	    margin: auto;
+	}
+	.green_main{
+		padding: 1rem;
+	}
+	.mm{
+		width: 100%;
+	}
+	li{
+		margin: 0;
+		width: 100%
+	}
+	li span{
+		padding: 1rem;
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+	#logo{
+		width: 100%;
+		height: auto;
+	}
+	li a{
+		margin: 0;
+	}
+	.button {
+	    height: 0rem;
+	    transition: all .3s;
+	}
+	.themenulist.tog .button {
+	    height: 3rem;
+	}
+	#ham{
+		display: block;
+		position: absolute;
+		right: 1rem;
+		top: 2rem;
+	}
+	#home_img{
+		width: 100%;
+		height: auto;
+		padding-top: 100%;
+	}
+	.contact-img{
+		height: 100%;
+		width: 100%;
+	}
+	.mySlide {
+	 	padding-top: 50%;
+	}
+	.u-input {
+		width: 98%;
+	}
+
+	.display-left{
+		top: 45%;
+		left: 5%;
+		transition: all .3s;
+	}
+	.display-right{
+		top: 45%;
+		right: 5%;
+		transition: all .3s;
+	}
+	.pro-1{
+	    top: 20%;
+	    transition: all .3s;
+	 }
+	.pro-2{
+	    top: 80%;
+	    transition: all .3s;
+	    
+	}
+	.slided {
+		top: 85%;
+	}
+	.slided-2 {
+		top: 55%;
+	}
+	.slided-3 {
+		top: 115%;
+	}
 }

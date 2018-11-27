@@ -25,53 +25,54 @@
     <script type="text/javascript">
       function hamtog(){
         document.querySelector('.themenulist').classList.toggle('tog');
-
+        document.querySelector('.pro-1').classList.toggle('slided-2');
+        document.querySelector('.pro-2').classList.toggle('slided-3');
       }
     </script>
 
-    <div style="height: 1200px; background: #1a0e04; padding-top: 35px">
-      <div>
-        <img src="src/promotion_1.webp" width="538" height="440">
+    <div style="background: #1a0e04; padding-top: 35px; padding-bottom: 150px;">
+      <div style="max-width:538px;">
+        <img class="pro-bg" src="src/promotion_1.webp">
         <span class="pro-1" style="font-size: 18pt">Discount all day 11:00-13.00 200%</span>
       </div>
       <div class="w3-content" style="max-width:538px; margin-top: 30px">
         <div class="mySlides">
           <div>
-            <img src="src/promotion_2.jpg" width="538" height="440">
+            <img class="pro-bg" src="src/promotion_2.jpg">
             <span class="pro-2"> All day all time 20%</span>
           </div>
         </div>
         <div class="mySlides">
          <div>
-            <img src="src/promotion_3.jpg" width="538" height="440">
+            <img class="pro-bg" src="src/promotion_3.jpg">
             <span class="pro-2"> All day all time 70%</span>
           </div>
         </div>
         <div class="mySlides">
            <div>
-            <img src="src/promotion_4.jpg" width="538" height="440">
+            <img class="pro-bg" src="src/promotion_4.jpg">
             <span class="pro-2"> All day all time 45%</span>
           </div>
         </div>
         <div class="mySlides">
           <div>
-            <img src="src/promotion_5.jpg" width="538" height="440">
+            <img class="pro-bg" src="src/promotion_5.jpg">
             <span class="pro-2"> All day all time 1%</span>
           </div>
         </div>
 
         <div class=" w3-section" style="margin-top: 0 !important;">
           <div class="w3-col s3">
-            <img class="demo w3-opacity" src="src/promotion_2.jpg" width="134.5" height="134.5" onclick="currentDiv(1)">
+            <img class="demo w3-opacity choce-1" src="src/promotion_2.jpg" onclick="currentDiv(1)">
           </div>
           <div class="w3-col s3">
-            <img class="demo w3-opacity" src="src/promotion_3.jpg" width="134.5" height="134.5" onclick="currentDiv(2)">
+            <img class="demo w3-opacity choce-2" src="src/promotion_3.jpg" onclick="currentDiv(2)">
           </div>
           <div class="w3-col s3">
-            <img class="demo w3-opacity" src="src/promotion_4.jpg" width="134.5" height="134.5" onclick="currentDiv(3)">
+            <img class="demo w3-opacity choce-3" src="src/promotion_4.jpg" onclick="currentDiv(3)">
           </div>
           <div class="w3-col s3">
-            <img class="demo w3-opacity" src="src/promotion_5.jpg" width="134.5" height="134.5" onclick="currentDiv(4)">
+            <img class="demo w3-opacity choce-4" src="src/promotion_5.jpg" onclick="currentDiv(4)">
           </div>
         </div>
       </div>
@@ -113,7 +114,7 @@
           dots[slideIndex-1].className += " w3-opacity-off";
         }
 
-        currentDiv(3);
+        currentDiv(1);
       </script>
 </body>
 </html>
