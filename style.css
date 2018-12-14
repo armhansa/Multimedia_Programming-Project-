@@ -166,22 +166,17 @@ footer{
   color: #FF55FF;
   font-size: 30px;
   padding: 10px;
-  position: absolute;
-  width: 100%;
+  width: 80%;
   text-align: center;
 
 }
 .pro-1{
 	color: #ffffff;
-    left: 0px;
-    top: 25%;
     text-shadow: 2px 2px #1a0e04;
 
  }
 .pro-2{
 	color: #ffffff;
-    left: 0px;
-    top:	90%;
     text-shadow: 2px 2px #1a0e04;
 	font-size: 18pt;
     
