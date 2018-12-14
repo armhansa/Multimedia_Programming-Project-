@@ -15,9 +15,13 @@
   }
   // $_SESSION['liked'] = [];
   // print_r($_SESSION['liked']);
-
+  
   function conn(){
-    $conn = new mysqli("localhost", "root","", "artisandb");
+    $conn = new mysqli("localhost", "it58070041", "#Helloworld01", "it58070041_arti");
+    if ($conn->connect_error) {
+      echo "<script>window.location = 'http://www.google.co.th'</script>";
+    }
+    echo "Connected successfully";
     return $conn;
   }
 
